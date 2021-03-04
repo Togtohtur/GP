@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="573.974px" height="447.979px" viewBox="65.299 6479.293 573.974 447.979"
+	 enable-background="new 65.299 6479.293 573.974 447.979" xml:space="preserve">
+<rect x="-61.694" y="6340.303" display="none" fill="#056B37" stroke="#000000" stroke-miterlimit="10" width="955.452" height="752.962"/>
+<g id="asdada.psb" display="none">
+	<g display="inline">
+		<defs>
+			<rect id="SVGID_1_" x="52.5" y="6474.094" width="600.844" height="455.813"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g id="シェイプ_4_のコピー_2" clip-path="url(#SVGID_2_)">
+			<g>
+				<polygon points="82.951,6494.813 82.951,6909.188 622.893,6909.18 622.893,6494.813 				"/>
+			</g>
+		</g>
+	</g>
+	<g display="inline">
+		<defs>
+			<rect id="SVGID_3_" x="52.5" y="6474.094" width="600.844" height="455.813"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<g id="シェイプ_5" clip-path="url(#SVGID_4_)">
+			<g>
+				<polygon points="84.888,6494.813 352.922,6670.922 620.956,6494.813 				"/>
+			</g>
+		</g>
+	</g>
+</g>
+<rect x="85.299" y="6499.293" fill="none" stroke="#D89828" stroke-width="40" stroke-miterlimit="10" width="533.974" height="407.979"/>
+<polyline fill="none" stroke="#D89828" stroke-width="40" stroke-miterlimit="10" points="616.271,6506.793 352.922,6695.786 
+	85.299,6506.793 "/>
+</svg>

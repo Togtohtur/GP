@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@font-face {
+  font-family: hirakakupro;
+  src: url("hirakakupro-w3-opentype.otf") format("opentype");
+}
+@font-face {
+  font-family: AvantGarde;
+  src: url(AvantGarde_Bold.ttf);
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  color: white;
+  font-family: 'oscl',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+}
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------------NavBar----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.header{
+  z-index: 110;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-color: #ededed;
+  position: relative;
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0px 0 0 rgba(0,0,0,0.1);
+}
+.container{
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  position: relative;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items:flex-end;
+}
+nav ul{
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;  
+}
+.categories{
+  flex: 1;
+}
+nav ul li{
+  display: block;
+  text-align: center;
+  position: relative;
+  width: calc(100%/5);
+  color: #000000;
+}
+nav ul li a {
+  width: auto;
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  border-bottom: 3px solid rgba(109,202,199,0);
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 22px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 5px 10px;
+  padding-top: 22px;
+  position: relative;
+}
+nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ea554d;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.toggle-nav{
+  width: 0;
+  height: 0;
+  display: none;
+
+}
+.container{
+  height: 100%;
+  float:right;
+}
+
+.nav-wrapper-mobile{
+  width: 25px;
+  height: 25px;
+}
+.nav-icon {
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: #ea554d;
+  content: '';
+  display: block;
+  height: 3px;
+  margin-bottom: 7px;
+  transition: all .2s ease-in-out;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------------Banner----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.Banner{
+  overflow: hidden;
+  max-height: 680px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+.Banner img{
+  width: 100%;
+}
+.Banner-over-text{
+  position: absolute;
+  font-size: 30px;
+  line-height: 30px;
+  position: absolute;
+  top:0;
+  text-align: center;
+  width: 100%;
+  color:#fff;
+  padding-top:150px;
+  left: 0;
+  right: 0;
+  text-shadow:1px 1px 10px #6dcac7, 1px 1px 10px #6dcac7;
+}
+.Banner-over-text p{
+  display: inline-flex;
+}
+.dot{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ea554d;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+.dots{
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+.mySlides{
+  height: 100%;
+  width: 100%;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------------Subsection------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.subsection{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  color: #000000;
+}
+h1{
+  padding: 25px 0;
+  font-weight: bold;
+}
+.Carousel{
+  height:100%;
+  margin:auto;
+  max-width: 1400px;
+}
+#Carousel_BG{
+  width: 100%;
+  background-image: linear-gradient(180deg, #ffffff, #f8f8f8);
+}
+.acc-img{
+  float: left;
+  width: 500px;
+  height:500px;
+}
+.acc-img img{
+  width: 40%;
+}
+.Descr-text{
+  text-align: left;
+  width: 30%;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.Descr-text h4{
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+
+}
+
+.Descr-text p{
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+}
+#Company{
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+
+
+}
+.Company-img{
+  width: 55%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.Company-img img{
+ margin: 25px 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.footer-container{
+  width: 100%;
+  max-width: 1400px;
+  float: center;
+  margin: auto;
+}
+.footer-bar{
+  float: center
+}
+footer{
+  border-top: 2px solid #6e6e6e;
+  width: 100%;
+  font-size: 7px;
+  color:  #6e6e6e;
+  padding: 25px 0;
+  text-align: center;
+}
+.footer-text{
+  font-size: 15px;
+  display: inline-block;
+  padding: 0 14px;
+}
+.footer-text img{
+height: 15px;
+padding-right: 7px;
+}
+.More{
+  background-color: #ea554d;
+  margin: 25px;
+  width: auto;
+}
+
+
+
+.bottle{
+  width: 150px;
+  display: inline-block;
+  padding: 50px;
+  height: 300px;
+}
+#Descr{
+  background-color: transparent;
+  color: black;
+}
+.card{
+  margin :0;
+  color: black;
+}
+.back{
+  color: black;
+}
+.text a:hover{
+  color:white;
+  transition: 0.1s;
+}
+.text a:hover i{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: 0.1s;
+}
+.example1 li span {
+  margin: 0;
+}
+.example1 li span img{
+  width: auto;
+  height: 400px;
+}
+.prev{
+
+  position: relative;
+  float: left;
+  top:150px;
+  left:0;  z-index: 50;
+}
+.next{
+
+  position: relative;
+  float: right;
+  top:150px;
+  right:0;  z-index: 50;
+}
+
+
+
+.next img{
+  transform: scaleX(-1);
+}
+.Beverage-name{
+  padding: 30px 0;
+}
+.more{
+  text-align: center;
+  padding: 25px 0;
+}
+.button{
+  display: inline-block;
+  background-color: #ea554d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+  z-index: 100;
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+}
+.line{
+  display: inline-block;
+  background-color: #ea554d;
+  height: 2px;
+  margin-top: 15px;
+  width: calc((100% - 120px)/2);;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.logo {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1.5s ease-out 0s 1 slideInFromTop;
+  width: 100%;
+}
+.Carousel ul li .flip-card{
+  border-right: 2px dashed #dbdada;
+}
+
+.Carousel ul li:nth-child(4n) .flip-card{
+  border-right: none;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: transparent;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table td {
+  padding: 1rem;
+  border-left: 1px solid #434343; 
+}
+table tr td:first-child {
+  border-left: 0;
+}
+table tr td:last-child {
+  border-right: 0;
+}
+#button-right{
+  float: right;
+}
+
+.categoriesNav{
+  display: block;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+body, html { overflow-x:hidden; }
+.header{
+  height:auto;
+}
+.logo {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  float:left;
+}
+
+.container{
+  display: block;
+  height: 50px;
+  text-align: center;
+}
+.toggle-head{
+  width: 25px;float: right;
+  padding-right: 25px;
+  padding-top: 15px;
+ height: 100%;
+  display: block;
+}
+.topnav-toggle{
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.toggle-nav ul{
+  width: 100%;clear: left;
+  display: block;
+
+}
+.toggle-nav ul li div{
+  width: 100%;
+  display: block;
+  position: relative;
+
+}
+
+.logo2{
+  display: inline-block;
+  height: 50px;
+  float: left
+
+}
+
+.Banner{
+  height:395px;
+  max-height: 395px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.Banner img{
+  height: 100%;
+  width: auto;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
+.Banner-over-text{
+  padding:0 15px 0 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: auto;
+  left: 0;
+  right: 0;font-size:15px;
+  line-height: 25px;
+  padding-top:161px;
+  font-size: 20px;
+}
+.dots{
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 34px;
+}
+
+.toggle-nav{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #ededed;
+}
+.categoriesNav{display: none}
+.toggle-nav ul{margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.toggle-nav ul li a{
+  margin: 0;
+  text-decoration: none;
+  color: black;
+
+}
+.toggle-nav ul li{
+  border-top: 1px solid black;
+  height: 30px;
+  background-color: #ededed;
+
+}
+
+.toggle-nav ul li{
+  width: 0;
+  height: 0;
+  display: none;
+}
+.toggle-nav.active {
+  margin-left: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  display: block;
+  transition: 0.1s;
+}
+.toggle-nav.active .nav-wrapper-mobile{
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-nav.active .nav-icon:before {
+  transform: translateY(10px) rotate(135deg);
+  margin-top: 10px;
+}
+.toggle-nav.active .nav-icon:after {
+  transform: translateY(-10px) rotate(-135deg);
+}
+.toggle-nav.active .nav-icon div {
+  transform: scale(0);
+}
+.toggle-nav.active .nav-wrapper-content {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+}
+.toggle-nav.active .toggle-nav{
+  height: 100%;
+  float: right;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+.toggle-nav.active .toggle-head{
+  display: block;
+  padding-left: 15px;}
+.toggle-nav.active ul{
+  width: 100%;
+  height: 100%;
+  display: block;
+  list-style: none;
+  box-shadow: -5px 5px 5px -5px rgba(0,0,0,0.25);
+}
+.toggle-nav.active ul li{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top: 1px solid rgba(255,255,255,0.25);
+}
+.toggle-nav.active ul li a{
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  padding: 15px 0;
+  font-size: 11px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.toggle-nav.active ul li .mobile-border{
+  width: 100%;
+}
+.toggle-nav.active ul li .mobile-border:hover{
+  background:  rgba(255,255,255,0.1);
+}
+.nav-buttons{
+  width: calc(100% - 45px);
+  padding:15px;
+  display: flex;
+}
+
+.flip-card {
+  border-left: none;
+}
+}
